@@ -1,0 +1,149 @@
+/*Global level Styles | start*/
+
+body{
+	background-color: #fafafa;
+}
+
+/*Global level Styles | end*/
+
+
+/*Landing section styles | start*/
+
+nav{
+	background-color: transparent;
+	box-shadow: none;
+	line-height: 90px;
+	height: 90px;
+	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+nav .brand-logo{
+	height: 100%;
+	padding: 10px;
+}
+
+nav.sticky{
+	line-height: 60px;
+	height: 60px;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+}
+
+.responsive-logo{
+	max-height: 100%;
+	width: auto;
+}
+
+#landing_section{
+	height: 90vh;
+	overflow: hidden;
+}
+
+#stripes{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+	transform: skewY(-6deg);
+	transform-origin: 0;
+	z-index: -1;
+}
+
+#intro{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/*Landing section styles | end*/
+
+
+/*About section | start*/
+
+#about_section{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.about_img{
+	padding: 15px;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+}
+
+/*About section | end*/
+
+
+/*Stages section | start*/
+
+#stages_section{
+	min-height: 90vh;
+	position: relative;
+	padding-top: 50px;
+}
+
+#stages_section::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 150%;
+	background-color: #ecf0f1;
+	transform: skewY(-6deg);
+	transform-origin: 0;
+	z-index: -1;
+}
+
+.stage{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background-color: #fafafa;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	cursor: pointer;
+	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.stage:hover{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.14), 0 10px 10px rgba(0,0,0,0.05);
+}
+
+.stage_image_container{
+	display: flex;
+	justify-content: center;
+}
+
+.stage .stage_image{
+	width: 80%;
+	padding-top: 80%;
+	border-radius: 50%;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+}
+
+/*Stages section | end*/
+
+
+
+/*Media Queries*/
+
+@media only screen and (min-width: 1300px){
+	#stages_section .container{
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1500px){
+	#stages_section .container{
+		width: 50%;
+	}
+}

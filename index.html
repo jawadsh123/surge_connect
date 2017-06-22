@@ -7,36 +7,130 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!-- Import Custom Stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 
-	<nav class="purple lighten-2">
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo">Logo</a>
-			<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Stages</a></li>
-				<li><a href="#">Schedule</a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Stages</a></li>
-				<li><a href="#">Schedule</a></li>
-			</ul>
+	
+	<!-- Landing page -->
+	<div class="" id="landing_section">
+		<!-- Navbar | starts -->
+		<div class="navbar-fixed">
+			<nav class="">
+				<div class="nav-wrapper container">
+					<a href="#!" class="brand-logo hide-on-small-only"><img src="assets/logo.png" class="responsive-logo"></a>
+					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Stages</a></li>
+						<li><a href="#">Schedule</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Stages</a></li>
+						<li><a href="#">Schedule</a></li>
+					</ul>
+				</div>
+			</nav>	
 		</div>
-	</nav>
+		<!-- Navbar | ends -->
+
+		<!-- Stripes for slanted look | start -->
+		<div id="stripes"></div>
+		<!-- Stripes for slanted look | end -->
+
+		<!-- Content for landing | start -->
+		<section id="intro">
+			<div class="container center">
+				<img src="assets/logo.png" class="responsive-img">
+				<h2 class="grey-text text-lighten-5">Surge Connect</h2>	
+			</div>
+		</section>
+		<!-- Content for landing | end -->
+	</div>
+
+	<!-- About section -->
+	<div id="about_section">
+		<div class="container center row valign-wrapper">
+			<!-- About section image -->
+			<div class="col l6 hide-on-med-and-down">
+				<img src="assets/logo.png" class="responsive-img circle about_img">
+			</div>
+
+			<!-- About section content -->
+			<div class="about_content col l6">
+				<h1>About</h1>
+				<p class="flow-text grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Stages section -->
+	<div id="stages_section" class="">
+		<div class="container center">
+			<h1>Stages</h1>
+			<!-- Stage 1 -->
+			<div class="stage row ">
+				<div class="col l3 stage_image_container hide-on-small-only">
+					<div class="stage_image"></div>
+				</div>
+				<div class="col l9 flow-text">
+					<h3>Stage 1</h3>
+					<h4>Techtalk/Keynote</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
+				</div>
+			</div>
+			<!-- Stage 2 -->
+			<div class="stage row ">
+				<div class="col l9 flow-text">
+					<h3>Stage 2</h3>
+					<h4>Hiring/Recruitment</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
+				</div>
+				<div class="col l3 stage_image_container hide-on-small-only">
+					<div class="stage_image"></div>
+				</div>
+			</div>
+			<!-- Stage 3 -->
+			<div class="stage row">
+				<div class="col l3 stage_image_container hide-on-small-only">
+					<div class="stage_image"></div>
+				</div>
+				<div class="col l9 flow-text">
+					<h3>Stage 3</h3>
+					<h4>Entrepreneur Talk</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
+				</div>
+			</div>
+			<!-- Stage 4 -->
+			<div class="stage row">
+				<div class="col l9 flow-text">
+					<h3>Stage 4</h3>
+					<h4>Hackathon</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
+				</div>
+				<div class="col l3 stage_image_container hide-on-small-only">
+					<div class="stage_image"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!--Import jQuery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Import Materialize -->
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<!-- Import file containing all required libraries -->
+	<script type="text/javascript" src="js/libraries.js"></script>
+	<!-- Import Custom script -->
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>
