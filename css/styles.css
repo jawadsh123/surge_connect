@@ -31,13 +31,18 @@ nav.sticky{
 	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
 }
 
+.navbar-fixed{
+	/*fix for IE stuttering issue*/
+	position: fixed;
+}
+
 .responsive-logo{
 	max-height: 100%;
 	width: auto;
 }
 
 #landing_section{
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 }
 
@@ -45,11 +50,11 @@ nav.sticky{
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 80%;
 	background: #4568DC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
 	background: linear-gradient(to right, #B06AB3, #4568DC);
-	transform: skewY(-6deg);
+	transform: skewY(-12deg);
 	transform-origin: 0;
 	z-index: -1;
 }
@@ -60,15 +65,49 @@ nav.sticky{
 	align-items: center;
 }
 
+#intro .company_name{
+	text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.event_date_card{
+	height: 300px;
+	width: 300px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	border-radius: 5px;
+	padding-top: 40px;
+}
+
+.event_date_card .title{
+	color: #4568DC;
+}
+
+.event_date_card .date{
+	color: #B06AB3;
+}
+
+.event_date_card hr{
+	height: 4px;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+	border: none;
+}
+
 /*Landing section styles | end*/
 
 
 /*About section | start*/
 
 #about_section{
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
+	min-height: 80vh;
+	/*display: flex;
+	align-items: center;*/
+	z-index: 2;
 }
 
 .about_img{
@@ -87,6 +126,7 @@ nav.sticky{
 	min-height: 90vh;
 	position: relative;
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 #stages_section::before{
@@ -94,7 +134,7 @@ nav.sticky{
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 150%;
+	height: 120%;
 	background-color: #ecf0f1;
 	transform: skewY(-6deg);
 	transform-origin: 0;
@@ -133,6 +173,63 @@ nav.sticky{
 /*Stages section | end*/
 
 
+/*Speaker section | start*/
+
+#speaker_section{
+	min-height: 100vh;
+	z-index: 20;
+	padding-top: 30px;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+	background: linear-gradient(to right, #B06AB3, #4568DC);	
+}
+
+.speaker_list{
+	margin-top: 50px;
+}
+
+.speaker_card.card{
+	margin: none;
+}
+
+.speaker_card{
+	height: 100%;
+}
+
+.owl-stage{
+	display: flex;
+	height: 550px;
+}
+
+.speaker_card .card-image{
+	height: 60%;
+	transform: skewY(-12deg);
+	transform-origin: 0;
+}
+
+.speaker_card .card-image img,.speaker_card .card-image a{
+	transform: skewY(12deg);
+	transform-origin: 0;
+}
+
+.speaker_card .card-action{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+}
+
+.speaker_card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+	color: purple;
+}
+
+.short_speaker_deescription{
+	font-size: 1.1em;
+}
+
+/*Speaker section | end*/
+
+
 
 /*Media Queries*/
 
@@ -147,3 +244,40 @@ nav.sticky{
 		width: 50%;
 	}
 }
+
+/*@media only screen and (min-height: 700px){
+	.speaker_card{
+		height: 500px;
+	}
+	.speaker_card .card-image{
+		height: 60%;
+	}
+}
+
+@media only screen and (max-height: 700px){
+	.speaker_card{
+		height: 400px;
+	}
+	.speaker_card .card-image{
+		height: 60%;
+	}
+	.speaker_short_description{
+		display: none;
+	}
+}*/
+
+
+
+/*Test styles | start*/
+
+#owl-promo{
+	height: 80vh;
+}
+
+#owl-promo .item{
+	height: 250px;
+	width: 250px;
+	background-color: pink;
+}
+
+/*Test styles | end*/
