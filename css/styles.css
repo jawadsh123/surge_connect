@@ -78,19 +78,60 @@ nav.sticky{
 	align-items: center;
 }
 
+
 #intro .company_name{
 	text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+
 #intro .title_card{
 	background-color: #fafafa;
 	padding: 50px;
+	margin-bottom: 20px;
 	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.4);
 	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	height: 30rem;
+	cursor: pointer;
+	/*max-width: 200px;*/
+}
+
+#intro .title_card img{
+	width: 100px;
+}
+
+#intro #player{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#intro .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background-color: rgba(176, 106, 179, 0.5);
+}
+
+.title_card .player_content{
+	position: relative;
+	z-index: 2;
+}
+
+.intro_register{
+	font-weight: bold;
+	border-radius: 3px;
 }
 
 .event_date_card{
-	height: 300px;
+	height: 100%;
 	width: 300px;
 	position: relative;
 	left: 50%;
@@ -107,6 +148,7 @@ nav.sticky{
 
 .event_date_card .date{
 	color: #B06AB3;
+	padding: 20px;
 }
 
 .event_date_card hr{
@@ -116,6 +158,7 @@ nav.sticky{
 	background: linear-gradient(to right, #B06AB3, #4568DC);
 	border: none;
 }
+
 
 /*Landing section styles | end*/
 
@@ -267,6 +310,16 @@ nav.sticky{
 @media only screen and (max-width: 500px){
 	.nav-wrapper.container{
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 998px){
+	#intro{
+		padding-top: 200px;
+	}
+
+	#landing_section{
+		height: auto;
 	}
 }
 
