@@ -1,7 +1,19 @@
 /*Global level Styles | start*/
 
+html{
+	font-family: 'Varela', sans-serif;
+}
+
 body{
 	background-color: #fafafa;
+}
+
+h3{
+	font-family: 'Aclonica', sans-serif;
+}
+
+h1{
+	font-family: 'Aclonica', sans-serif;
 }
 
 /*Global level Styles | end*/
@@ -145,15 +157,15 @@ nav.sticky{
 	display: flex;
 	align-items: center;
 	padding: 20px;
-	background-color: #fafafa;
-	border-radius: 10px;
-	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	/*background-color: #fafafa;*/
+	/*border-radius: 10px;*/
+	/*box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);*/
 	cursor: pointer;
 	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .stage:hover{
-	box-shadow: 0 14px 28px rgba(0,0,0,0.14), 0 10px 10px rgba(0,0,0,0.05);
+	/*box-shadow: 0 14px 28px rgba(0,0,0,0.14), 0 10px 10px rgba(0,0,0,0.05);*/
 }
 
 .stage_image_container{
