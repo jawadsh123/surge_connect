@@ -54,9 +54,10 @@ nav.sticky{
 	background: #4568DC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
 	background: linear-gradient(to right, #B06AB3, #4568DC);
-	transform: skewY(-12deg);
+	transform: skewY(-15deg);
 	transform-origin: 0;
 	z-index: -1;
+	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
 }
 
 #intro{
@@ -69,6 +70,12 @@ nav.sticky{
 	text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#intro .title_card{
+	background-color: #fafafa;
+	padding: 50px;
+	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.4);
+	border-radius: 10px;
+}
 
 .event_date_card{
 	height: 300px;
@@ -77,7 +84,7 @@ nav.sticky{
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #fff;
-	box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 5px 5px 25px 0 rgba(46,61,73,.4);
 	border-radius: 5px;
 	padding-top: 40px;
 }
@@ -105,8 +112,6 @@ nav.sticky{
 
 #about_section{
 	min-height: 80vh;
-	/*display: flex;
-	align-items: center;*/
 	z-index: 2;
 }
 
@@ -136,7 +141,8 @@ nav.sticky{
 	width: 100%;
 	height: 120%;
 	background-color: #ecf0f1;
-	transform: skewY(-6deg);
+	box-shadow: 0 -2px 6px rgba(0,21,64,.14), 0 -10px 20px rgba(0,21,64,.05);
+	transform: skewY(-9deg);
 	transform-origin: 0;
 	z-index: -1;
 }
@@ -181,7 +187,8 @@ nav.sticky{
 	padding-top: 30px;
 	background: #4568DC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);	
+	background: linear-gradient(to right, #B06AB3, #4568DC);
+	box-shadow: 0 -2px 6px rgba(0,21,64,.14), 0 -10px 20px rgba(0,21,64,.05);
 }
 
 .speaker_list{
@@ -245,26 +252,11 @@ nav.sticky{
 	}
 }
 
-/*@media only screen and (min-height: 700px){
-	.speaker_card{
-		height: 500px;
-	}
-	.speaker_card .card-image{
-		height: 60%;
+@media only screen and (max-width: 500px){
+	.nav-wrapper.container{
+		width: 100%;
 	}
 }
-
-@media only screen and (max-height: 700px){
-	.speaker_card{
-		height: 400px;
-	}
-	.speaker_card .card-image{
-		height: 60%;
-	}
-	.speaker_short_description{
-		display: none;
-	}
-}*/
 
 
 

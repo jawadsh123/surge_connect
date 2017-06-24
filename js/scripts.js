@@ -10,21 +10,27 @@ jQuery(document).ready(function($) {
         }
 	});
 
+	// Side nav inititalization
+	$(".button-collapse").sideNav();
 
+
+	// Owl carousel inititalization for speakers list
     $(".speaker_list").owlCarousel({
-    loop:false,
-    margin:10,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1200:{
-            items:3
-        }
-    }
-})
+		loop:false,
+		margin:10,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1200:{
+				items:3
+			}
+		}
+	})
+
+
 
 });
