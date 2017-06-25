@@ -226,9 +226,15 @@ nav.sticky{
 	width: 80%;
 	padding-top: 80%;
 	border-radius: 50%;
-	background: #4568DC;  /* fallback for old browsers */
+	background: #4568DC;
 	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
 	background: linear-gradient(to right, #B06AB3, #4568DC);
+	
+}
+
+.stage_image.techtalk_image{
+	background-image: url("../assets/keynote.png");
+	background-size: contain;
 }
 
 /*Stages section | end*/
