@@ -32,10 +32,8 @@ jQuery(document).ready(function($) {
 	})
 
 
-    // resize video on window resize
-	$(window).resize(function(){
-		sizeTheVideo();
-	});
+    // Initializing Materialize Scroll-spy
+    $(".scrollspy").scrollSpy();
 
 
 });
@@ -43,48 +41,38 @@ jQuery(document).ready(function($) {
 
 
 // Script to play a video from youtube
-var tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
+function onYouTubePlayerAPIReady() {
 	player = new YT.Player('player', {
-		height: '100%',
-		width: '100%',
-		videoId: 'rESBxsSdhnY',
 		playerVars: {
-			'wmode': 'opaque',
 			'autoplay': 1,
+			'loop': 1,
 			'controls': 0,
+			'autohide': 1,
 			'showinfo': 0,
-			'modestbranding': 1,
-			'rel': 0,
+			'mute': 1,
+			'modestbranding': 0,
+			'playlist': 'rESBxsSdhnY'
 		},
+		videoId: 'rESBxsSdhnY',
 		events: {
 			'onReady': onPlayerReady
 		}
 	});
+
 }
 
 function onPlayerReady(event) {
-	sizeTheVideo();
 	event.target.mute();
-	event.target.playVideo();
 }
 
-
-function sizeTheVideo(){
-	// Aspect ratio of a 1080p video
-	var aspectRatio = 1.78;
-
-	var video = $('.player_wrapper iframe');
-	var videoHeight = video.outerHeight();
-	var newWidth = videoHeight*aspectRatio;
-	var halfNewWidth = newWidth/2;
-
-	//Define the new width and centrally align the iframe
-	video.css({"width":newWidth+"px","left":"50%","margin-left":"-"+halfNewWidth+"px"});
-}
+$(window).scroll(function() {
+	var hT = $('#player').height(),
+	wS = $(this).scrollTop();
+	if (wS > hT) {
+		player.pauseVideo();
+	}
+	else {
+		player.playVideo();
+	}
+});

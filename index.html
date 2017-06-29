@@ -20,28 +20,28 @@
 
 	
 	<!-- Landing page -->
-	<div class="" id="landing_section">
+	<div id="landing_section" class="scrollspy">
 		<!-- Navbar | starts -->
 		<div class="navbar-fixed">
 			<nav class="">
 				<div class="nav-wrapper container">
-					<a href="#!" class="brand-logo hide-on-small-only"><img src="assets/logo.png" class="responsive-logo"></a>
+					<a href="#!" class="brand-logo hide-on-small-only"><img src="assets/logo.png" class="responsive-logo"> <span class="company_name">Surge Connect</span></a>
 					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Stages</a></li>
-						<li><a href="#">Schedule</a></li>
+						<li><a href="#landing_section"> <span>Home</span> </a></li>
+						<li><a href="#about_section"> <span>About</span> </a></li>
+						<li><a href="#stages_section"> <span>Stages</span> </a></li>
+						<li><a href="#speaker_section"> <span>Speakers</span> </a></li>
 					</ul>
 				</div>
 			</nav>	
 		</div>
 		<!-- Side nav for mobile -->
 		<ul class="side-nav" id="mobile-nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Stages</a></li>
-			<li><a href="#">Schedule</a></li>
+			<li><a href="#landing_section">Home</a></li>
+			<li><a href="#about_section">About</a></li>
+			<li><a href="#stages_section">Stages</a></li>
+			<li><a href="#speaker_section">Speakers</a></li>
 		</ul>
 		<!-- Navbar | ends -->
 
@@ -51,30 +51,15 @@
 
 		<!-- Content for landing | start -->
 		<section id="intro">
-			<div class="container center row">
-				<div class="col l6 m8 offset-m2 s12 title_card_wrapper">
-					<div class="title_card  ">
+			<div>
+				<div class="player_wrapper">
+					<div id="player">
+
+					</div>		
+					<div class="overlay">
 						<div class="player_content">
-							<img src="assets/logo.png" class="responsive-img">
-							<h2 class="grey-text text-lighten-5 company_name">Surge Connect</h2>
-							<p class="grey-text text-lighten-5">Get a chance to Connect with the people that matter.</p>
-							<a href="#" class="btn grey lighten-4 grey-text text-darken-4 waves-effect waves-purple intro_register">Register</a>
+							<div class="main_content grey-text text-lighten-5">Change Things,<br> Dream Big</div>
 						</div>
-						
-						<div class="player_wrapper">
-							<div id="player">
-								
-							</div>		
-						</div>
-						<div class="overlay"></div>
-					</div>
-					
-				</div>
-				<div class="col l6 s12 event_date_card_wrapper">
-					<div class="event_date_card">
-						<h4 class="row title">Next Connect on</h4>
-						<hr>
-						<h3 class="row date">20<sup>th</sup> August 2017</h3>
 					</div>
 				</div>
 			</div>
@@ -82,77 +67,58 @@
 		<!-- Content for landing | end -->
 	</div>
 
-	<!-- About section -->
-	<div id="about_section">
-		<div class="container center row valign-wrapper">
-			<!-- About section image -->
-			<div class="col l6 hide-on-med-and-down">
-				<img src="assets/logo.png" class="responsive-img circle about_img">
-			</div>
-
-			<!-- About section content -->
-			<div class="about_content col l6">
-				<h1>About</h1>
-				<p class="flow-text grey-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
-			</div>
-		</div>
-	</div>
 
 	<!-- Stages section -->
-	<div id="stages_section" class="">
-		<div class="container center">
-			<h1>Stages</h1>
+	<div id="stages_section" class="scrollspy">
+		<div class="container">
+			<h1 class="center">Look what we've got for you</h1>
 			<!-- Stage 1 -->
 			<div class="stage row ">
-				<div class="col l3 stage_image_container hide-on-small-only">
+				<div class="col l6 s12 stage_image_container ">
 					<div class="stage_image techtalk_image">
 
 					</div>
 				</div>
-				<div class="col l9 flow-text">
-					<h3>Stage 1</h3>
+				<div class="col l6 s12 flow-text">
 					<h4>Techtalk/Keynote</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
 				</div>
 			</div>
 			<!-- Stage 2 -->
 			<div class="stage row ">
-				<div class="col l9 flow-text">
-					<h3>Stage 2</h3>
+				<div class="col l6 s12 flow-text">
 					<h4>Hiring/Recruitment</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
 				</div>
-				<div class="col l3 stage_image_container hide-on-small-only">
-					<div class="stage_image"></div>
+				<div class="col l6 s12 stage_image_container ">
+					<div class="stage_image techtalk_image"></div>
 				</div>
 			</div>
 			<!-- Stage 3 -->
 			<div class="stage row">
-				<div class="col l3 stage_image_container hide-on-small-only">
-					<div class="stage_image"></div>
+				<div class="col l6 s12 stage_image_container ">
+					<div class="stage_image techtalk_image"></div>
 				</div>
-				<div class="col l9 flow-text">
-					<h3>Stage 3</h3>
+				<div class="col l6 s12 flow-text">
 					<h4>Entrepreneur Talk</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
 				</div>
 			</div>
 			<!-- Stage 4 -->
 			<div class="stage row">
-				<div class="col l9 flow-text">
-					<h3>Stage 4</h3>
+				<div class="col l6 s12 flow-text">
 					<h4>Hackathon</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat risus quis felis pretium, in porttitor erat vehicula. Praesent varius, augue id lobortis aliquam, elit diam luctus nibh, a bibendum erat magna a nisl. </p>
 				</div>
-				<div class="col l3 stage_image_container hide-on-small-only">
-					<div class="stage_image"></div>
+				<div class="col l6 s12 stage_image_container ">
+					<div class="stage_image techtalk_image"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Speaker Section -->
-	<div id="speaker_section">
+	<div id="speaker_section" class="scrollspy">
 		<div class="container center">
 			<h1 class="grey-text text-lighten-5">Speakers</h1>
 			<div class="speaker_list owl-carousel owl-theme">
@@ -227,27 +193,6 @@
 		</div>
 	</div>
 
-	<div id="owl-promo" class="owl-carousel owl-theme">
-		<div class="item">
-			<div class=" card small">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/logo_purple.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Vikramank Singh<i class="material-icons right">more_vert</i></span>
-						<p><a href="#">This is a link</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Vikramank Singh<i class="material-icons right">close</i></span>
-						<p>Here is some more information about this product that is only revealed once clicked on.</p>
-					</div>
-				</div>
-		</div>
-		<div class="item"></div>
-		<div class="item"></div>
-		<div class="item"></div>
-	</div>
-
 
 	<!--Import jQuery-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -257,6 +202,8 @@
 	<script type="text/javascript" src="js/libraries.js"></script>
 	<!-- Import Custom script -->
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- Youtube Player API -->
+	<script src="http://www.youtube.com/player_api"></script>
 
 
 

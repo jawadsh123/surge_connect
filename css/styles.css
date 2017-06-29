@@ -1,4 +1,4 @@
-/*Global level Styles | start*/
+Global level Styles | start*/
 
 html{
 	font-family: 'Varela', sans-serif;
@@ -22,7 +22,7 @@ h1{
 /*Landing section styles | start*/
 
 nav{
-	background-color: transparent;
+	background: transparent;
 	box-shadow: none;
 	line-height: 90px;
 	height: 90px;
@@ -37,10 +37,7 @@ nav .brand-logo{
 nav.sticky{
 	line-height: 60px;
 	height: 60px;
-	background: #4568DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);
-	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	background: #3498db;
 }
 
 .navbar-fixed{
@@ -48,9 +45,20 @@ nav.sticky{
 	position: fixed;
 }
 
+nav ul a span{
+	padding: 10px;
+	border: 2px solid;
+	border-radius: 20px;
+}
+
 .responsive-logo{
 	max-height: 100%;
 	width: auto;
+}
+
+.brand-logo .company_name{
+	position: relative;
+	top: -25%;
 }
 
 #landing_section{
@@ -58,56 +66,20 @@ nav.sticky{
 	overflow: hidden;
 }
 
-#stripes{
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 80%;
-	background: #4568DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);
-	transform: skewY(-15deg);
-	transform-origin: 0;
-	z-index: -1;
-	box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
-}
-
 #intro{
 	height: 100%;
 	display: flex;
 	align-items: center;
-}
-
-
-#intro .company_name{
-	text-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-
-#intro .title_card{
-	background-color: #fafafa;
-	padding: 50px;
-	margin-bottom: 20px;
-	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.4);
-	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
-	height: 30rem;
-	cursor: pointer;
-	/*max-width: 200px;*/
 }
 
-#intro .title_card img{
-	width: 100px;
-}
-
-#intro #player{
+.player_wrapper iframe, .player_wrapper{
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #intro .overlay {
@@ -117,12 +89,15 @@ nav.sticky{
 	right: 0;
 	bottom: 0;
 	z-index: 1;
-	background-color: rgba(176, 106, 179, 0.5);
+	background-color: rgba(1,87,155, 0.5);
+	display: flex;
+	align-items: center;
+	/*rgb(1,87,155)*/
 }
 
-.title_card .player_content{
-	position: relative;
-	z-index: 2;
+.player_content .main_content{
+	font-size: 5em;
+	margin-left: 5vw;
 }
 
 .intro_register{
@@ -189,23 +164,11 @@ nav.sticky{
 	padding-bottom: 50px;
 }
 
-#stages_section::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 120%;
-	background-color: #ecf0f1;
-	box-shadow: 0 -2px 6px rgba(0,21,64,.14), 0 -10px 20px rgba(0,21,64,.05);
-	transform: skewY(-9deg);
-	transform-origin: 0;
-	z-index: -1;
-}
-
 .stage{
-	display: flex;
-	align-items: center;
+	/*display: flex;
+	align-items: center;*/
 	padding: 20px;
+	height: 410px;
 	/*background-color: #fafafa;*/
 	/*border-radius: 10px;*/
 	/*box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);*/
@@ -220,21 +183,22 @@ nav.sticky{
 .stage_image_container{
 	display: flex;
 	justify-content: center;
+	height: 100%;
 }
 
 .stage .stage_image{
-	width: 80%;
-	padding-top: 80%;
-	border-radius: 50%;
-	background: #4568DC;
-	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);
-	
+	width: 100%;
+	height: 100%;
+	/*padding-top: 100%;*/
+	/*height: 100%;*/
+	/*background-color: red;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-height: 400px;
 }
 
 .stage_image.techtalk_image{
-	background-image: url("../assets/keynote.png");
-	background-size: contain;
+	background-image: url("../assets/landing_img.jpg");
 }
 
 /*Stages section | end*/
@@ -301,17 +265,6 @@ nav.sticky{
 
 /*Media Queries*/
 
-@media only screen and (min-width: 1300px){
-	#stages_section .container{
-		width: 60%;
-	}
-}
-
-@media only screen and (min-width: 1500px){
-	#stages_section .container{
-		width: 50%;
-	}
-}
 
 @media only screen and (max-width: 500px){
 	.nav-wrapper.container{
@@ -319,7 +272,7 @@ nav.sticky{
 	}
 }
 
-@media only screen and (max-width: 998px){
+/*@media only screen and (max-width: 998px){
 	#intro{
 		padding-top: 200px;
 	}
@@ -327,6 +280,10 @@ nav.sticky{
 	#landing_section{
 		height: auto;
 	}
+}*/
+
+@media (min-aspect-ratio: 16/9) {
+  .player_wrapper {height: 300%;top: -100%;}
 }
 
 
@@ -343,4 +300,4 @@ nav.sticky{
 	background-color: pink;
 }
 
-/*Test styles | end*/
+/*Test styles | end
