@@ -158,48 +158,52 @@ nav ul a span{
 /*Stages section | start*/
 
 #stages_section{
-	min-height: 90vh;
 	position: relative;
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
-.stage{
-	/*display: flex;
-	align-items: center;*/
-	padding: 20px;
-	height: 410px;
-	/*background-color: #fafafa;*/
-	/*border-radius: 10px;*/
-	/*box-shadow: 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);*/
-	cursor: pointer;
-	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+#stages_section .heading{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #212121;
+	color: #fafafa;
+	font-size: 3em;
 }
 
-.stage:hover{
-	/*box-shadow: 0 14px 28px rgba(0,0,0,0.14), 0 10px 10px rgba(0,0,0,0.05);*/
+#stages_list .stage{
+	height: 500px;
 }
 
-.stage_image_container{
-	display: flex;
-	justify-content: center;
+#stages_list .row{
+	margin-bottom: 0;
+}
+
+.stage .stage_image_container{
 	height: 100%;
+	overflow: hidden;
+	padding: 0;
 }
 
-.stage .stage_image{
+.stage_image_container .stage_image{
+	height: 100%;
 	width: 100%;
-	height: 100%;
-	/*padding-top: 100%;*/
-	/*height: 100%;*/
-	/*background-color: red;*/
+	background: linear-gradient(rgba(33,33,33,0.4), rgba(33,33,33,0.4)) , url("../assets/landing_img.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
-	max-height: 400px;
+	transition: all 500ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-.stage_image.techtalk_image{
-	background-image: url("../assets/landing_img.jpg");
+.stage .stage_content{
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
 }
+
+.stage:hover .stage_image{
+	transform: scale(1.05);
+}
+
 
 /*Stages section | end*/
 
