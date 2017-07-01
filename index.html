@@ -23,15 +23,19 @@
 	<div id="landing_section" class="scrollspy">
 		<!-- Navbar | starts -->
 		<div class="navbar-fixed">
-			<nav class="">
+			<nav class="white z-depth-2">
 				<div class="nav-wrapper container">
-					<a href="#!" class="brand-logo hide-on-small-only"><img src="assets/logo.png" class="responsive-logo"> <span class="company_name">Surge Connect</span></a>
+					<a href="#!" class="brand-logo hide-on-small-only"><img src="assets/logo_black.png" class="responsive-logo">  <span class="company_name"><span class="surge">SURGE</span> CONNECT</span></a>
 					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="#landing_section"> <span>Home</span> </a></li>
+						<li><a href="#landing_section"> <span class="active">Home</span> </a></li>
 						<li><a href="#about_section"> <span>About</span> </a></li>
 						<li><a href="#stages_section"> <span>Stages</span> </a></li>
 						<li><a href="#speaker_section"> <span>Speakers</span> </a></li>
+						<li><a href="#speaker_section"> <span>Venue</span> </a></li>						
+						<li><a href="#speaker_section"> <span>Schedule</span> </a></li>
+						<li><a href="#speaker_section"> <span>Companies</span> </a></li>
+						<li><a href="#speaker_section"> <span>Buy Tickets</span> </a></li>
 					</ul>
 				</div>
 			</nav>	
@@ -48,7 +52,7 @@
 		<!-- Content for landing | start -->
 		<section id="intro">
 			<div>
-				<div class="player_wrapper">
+				<!-- <div class="player_wrapper">
 					<div id="player">
 
 					</div>		
@@ -57,7 +61,7 @@
 							<div class="main_content grey-text text-lighten-5">Change Things,<br> Dream Big</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 		<!-- Content for landing | end -->
@@ -67,7 +71,7 @@
 	<!-- Stages section -->
 	<div id="stages_section" class="scrollspy">
 		<div class="heading">
-			<span>Stages</span>
+			<span>Look what we've got for you.</span>
 		</div>
 		<div id="stages_list">
 			<!-- Stage 1 -->
@@ -127,11 +131,34 @@
 	<!-- Speaker Section -->
 	<div id="speaker_section" class="scrollspy">
 		<div class="container center">
-			<h1 class="grey-text text-lighten-5">Speakers</h1>
+			<h1 class="grey-text text-lighten-5">Who's going to speak?</h1>
 			<div class="speaker_list owl-carousel owl-theme">
-				<div class="item card speaker_card">
+				<div class="item card speaker_card center z-depth-3">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/speaker_1.jpg">
+						<center>
+							<img class="activator speaker_img" src="assets/speaker_1.jpg">
+						</center>
+						<!-- <div class="activator img_div"></div> -->
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Vikramank Singh</span>
+						<p class="speaker_short_description">Vikramank Singh is currently working as Software Engineer with the research team at Facebook.</p>
+					</div>
+					<div>
+						<a style="float: left;" href="https://www.linkedin.com/" target="_blank"><img id="linkedin" class="social_icon" src="assets/linkedin.png"></a>
+						<a style="float: left;" href="https://www.linkedin.com/" target="_blank"><img id="facebook" class="social_icon" src="assets/facebook.png"></a>
+						<a style="float: left;" href="https://www.linkedin.com/" target="_blank"><img id="instagram" class="social_icon" src="assets/instagram.png"></a>
+					
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Vikramank Singh<i class="material-icons right">close</i></span>
+						<p class="speaker_long_description">A keen researcher and a prolific data scientist, Vikramank Singh has an exhaustive background and a vast experience in Data Analytics and Machine Learning, currently working as Software Engineer with the research team at Facebook.</p>
+					</div>
+				</div>
+
+				<div class="item card speaker_card z-depth-3">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator spaeker_img" src="assets/speaker_2.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Vikramank Singh</span>
@@ -146,9 +173,9 @@
 					</div>
 				</div>
 
-				<div class="item card speaker_card">
+				<div class="item card speaker_card z-depth-3">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/speaker_2.jpg">
+						<img class="activator spaeker_img" src="assets/speaker_3.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Vikramank Singh</span>
@@ -163,26 +190,9 @@
 					</div>
 				</div>
 
-				<div class="item card speaker_card">
+				<div class="item card speaker_card z-depth-3">
 					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/speaker_3.jpg">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Vikramank Singh</span>
-						<p class="speaker_short_description">Vikramank Singh is currently working as Software Engineer with the research team at Facebook.</p>
-					</div>
-					<div class="card-action">
-						<a href="https://www.linkedin.com/" target="_blank">Connect</a>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title grey-text text-darken-4">Vikramank Singh<i class="material-icons right">close</i></span>
-						<p class="speaker_long_description">A keen researcher and a prolific data scientist, Vikramank Singh has an exhaustive background and a vast experience in Data Analytics and Machine Learning, currently working as Software Engineer with the research team at Facebook.</p>
-					</div>
-				</div>
-
-				<div class="item card speaker_card">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="assets/speaker_4.jpg">
+						<img class="activator spaeker_img" src="assets/speaker_4.jpg">
 					</div>
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">Vikramank Singh</span>

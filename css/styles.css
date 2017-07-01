@@ -1,19 +1,17 @@
-Global level Styles | start*/
+/*Global level Styles | start*/
 
-html{
-	font-family: 'Varela', sans-serif;
-}
 
 body{
 	background-color: #fafafa;
 }
 
-h3{
-	font-family: 'Aclonica', sans-serif;
+h1{
+	font-family: 'Varela', sans-serif;	
 }
 
-h1{
-	font-family: 'Aclonica', sans-serif;
+.container{
+	/*width: 95%;*/
+	/*max-width: 95%;*/
 }
 
 /*Global level Styles | end*/
@@ -28,6 +26,7 @@ nav{
 	height: 90px;
 	transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
+
 
 nav .brand-logo{
 	height: 100%;
@@ -45,9 +44,24 @@ nav.sticky{
 	position: fixed;
 }
 
+nav ul a:hover{
+	background: none;
+	transition: none;
+}
+
 nav ul a span{
+	color: #212121;
 	padding: 10px;
-	border: 2px solid;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+nav ul a span.active{
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px #18ffff solid;
+	color: #18ffff;
 	border-radius: 20px;
 }
 
@@ -56,9 +70,15 @@ nav ul a span{
 	width: auto;
 }
 
+.surge{
+	font-weight: 500;	
+	color: #18ffff;
+}
+
 .brand-logo .company_name{
 	position: relative;
 	top: -25%;
+	color: #212121;
 }
 
 #landing_section{
@@ -128,9 +148,7 @@ nav ul a span{
 
 .event_date_card hr{
 	height: 4px;
-	background: #4568DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);
+	background-color: #
 	border: none;
 }
 
@@ -159,6 +177,14 @@ nav ul a span{
 
 #stages_section{
 	position: relative;
+}
+
+.owl-stage{
+	padding: 20px;
+}
+
+.item{
+	margin-right: 20px;
 }
 
 #stages_section .heading{
@@ -214,10 +240,11 @@ nav ul a span{
 	min-height: 100vh;
 	z-index: 20;
 	padding-top: 30px;
-	background: #4568DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
-	background: linear-gradient(to right, #B06AB3, #4568DC);
-	box-shadow: 0 -2px 6px rgba(0,21,64,.14), 0 -10px 20px rgba(0,21,64,.05);
+	background: #18ffff;  /* fallback for old browsers */
+}
+
+.container_speaker{
+	max-width: 80%;
 }
 
 .speaker_list{
@@ -237,15 +264,49 @@ nav ul a span{
 	height: 550px;
 }
 
-.speaker_card .card-image{
+./*speaker_card .card-image{
 	height: 60%;
 	transform: skewY(-12deg);
 	transform-origin: 0;
+}*/
+
+.card .card-image img{
+	height: 30%;
+	border-radius: 50%;	
 }
 
-.speaker_card .card-image img,.speaker_card .card-image a{
+.card .card-image img.speaker_img{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 17px 20px 19px rgba(0, 255, 255, 0.08);
+}
+
+/*.speaker_card .card-image img,.speaker_card .card-image a{
 	transform: skewY(12deg);
 	transform-origin: 0;
+}*/
+
+.card img.social_icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	padding: 8px;
+	margin: 5px;
+}
+
+#linkedin{
+	background-color: #1976d2;
+}
+
+#facebook{
+	background-color: #3f51b5;
+}
+
+#instagram{
+	background: linear-gradient(rgb(255,196,0), rgb(245, 0, 87));
 }
 
 .speaker_card .card-action{
